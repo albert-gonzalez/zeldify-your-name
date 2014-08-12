@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl: '/',
+    baseUrl: '../../',
     paths: {
         jquery: 'components/jquery/dist/jquery.min',
         bootstrap: 'components/bootstrap/dist/js/bootstrap.min',
