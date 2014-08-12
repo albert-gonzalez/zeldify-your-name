@@ -1,0 +1,39 @@
+{
+  "name": "Zeldify Your Name",
+  "version": "0.1.0",
+  "authors": [
+    "vacilone <albert.glez.mld@gmail.com>"
+  ],
+  "description": "Convert your name in a name of Zelda games",
+  "keywords": [
+    "video",
+    "game",
+    "zelda",
+    "requirejs",
+    "bower",
+    "nodejs",
+    "grunt",
+    "bootstrap",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.21",
+    "requirejs": "~2.1.14",
+    "bootstrap": "~3.2.0",
+    "requirejs-domready": "~2.0.1",
+    "angular-route": "~1.2.21",
+    "angular-animate": "~1.2.21"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.21"
+  }
+}

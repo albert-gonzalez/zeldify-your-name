@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Zeldify Your Name</title>
+
+    <link href="app/dist/main.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Zeldify Your Name</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">App</a></li>
+            <li class="active"><a href="/about.html">About</a></li>
+            <li><a href="#"><img class="margin-right-10px" src="/app/images/github.png" width="20px">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>About Zeldify Your Name</h1>
+          </div>
+            <p class="lead">
+              <strong>Zeldify Your Name</strong> is a simple application that convert the
+              input string in a name of <strong>'The Legend of Zelda'</strong> games.
+              The really interesting is the used technologies.
+            </p>
+            <p class="lead">
+              The main technologies are <strong>Requirejs</strong>, <strong>AngularJs,</strong>
+              <strong>Bootstrap</strong> and <strong>JQuery</strong>.
+              <strong>KarmaJS</strong> and <strong>Jasmine</strong> are used for Unit Testing.
+              <strong>Protractor</strong>,<strong>Selenium</strong> and <strong>Jasmine</strong> are used por e2e Testing.
+              <strong>Bower</strong> and <strong>npm</strong> are used for package management and
+              <strong>Grunt</strong> for building the css and js distribution.
+            </p>
+        </div>
+      </div>
+    </div>
+    <script src="components/requirejs/require.js"></script>
+    <script>
+        require(["app/js/main"], function () {
+            require(['bootstrap']);
+        })
+    </script>
+  </body>
+</html>
