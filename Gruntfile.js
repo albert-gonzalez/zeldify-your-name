@@ -1,20 +1,17 @@
 //Gruntfile
 module.exports = function(grunt) {
     'use strict';
-    //Initializing the configuration object
     grunt.initConfig({
 
-      // Task configuration
         less: {
             development : {
                 options: {
-                    compress: true,  //minifying the result
+                    compress: true,
                     paths: [
                         './components/bootstrap/less'
                     ]
                 },
                 files: {
-                  //compiling frontend.less into frontend.css
                     "./app/dist/main.css": "./app/css/less/main.less",
                 }
             }
@@ -32,28 +29,27 @@ module.exports = function(grunt) {
         },
         watch: {
             less: {
-                files: ['app/css/less/*.less'],  //watched files
-                tasks: ['less'],                          //tasks to run
+                files: ['app/css/less/*.less'],
+                tasks: ['less'],
                 options: {
-                    livereload: true                        //reloads the browser
+                    livereload: true
                 }
             },
             requirejs: {
                 files: ['app/js/**/*.js'],
                 tasks: ['requirejs'],
                 options: {
-                    livereload: true                        //reloads the browser
+                    livereload: true
                 }
             }
         },
 
         protractor: {
             options: {
-                configFile: "protractor.conf.js", // Default config file
-                keepAlive: true, // If false, the grunt process stops when the test fails.
-                noColor: false, // If true, protractor will not use colors in its output.
+                configFile: "protractor.conf.js",
+                keepAlive: true,
+                noColor: false,
                 args: {
-                    //specs: ['test/app/appSpec.js']
                 }
             },
             app: {
@@ -66,14 +62,11 @@ module.exports = function(grunt) {
         },
     });
 
-    // Plugins
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-protractor-runner');
 
-
-    // Task definition
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['less', 'requirejs']);
 };
