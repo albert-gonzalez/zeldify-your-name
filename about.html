@@ -38,22 +38,96 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <div class="page-header">
-            <h1>About Zeldify Your Name</h1>
-          </div>
-            <p class="lead">
-              <strong>Zeldify Your Name</strong> is a simple application that convert the
-              input string in a name of <strong>'The Legend of Zelda'</strong> games.
-              The really interesting is the used technologies.
-            </p>
-            <p class="lead">
-              The main technologies are <strong>Requirejs</strong>, <strong>AngularJs,</strong>
-              <strong>Bootstrap</strong> and <strong>JQuery</strong>.
-              <strong>KarmaJS</strong> and <strong>Jasmine</strong> are used for Unit Testing.
-              <strong>Protractor</strong>,<strong>Selenium</strong> and <strong>Jasmine</strong> are used por e2e Testing.
-              <strong>Bower</strong> and <strong>npm</strong> are used for package management and
-              <strong>Grunt</strong> for building the css and js distribution.
-            </p>
+          <article class="markdown-body entry-content">
+            <div class="page-header">
+              <h1>About Zeldify Your Name</h1>
+            </div>
+            <p>Zeldify Your Name is a simple application that convert the input string in a name of 'The Legend of Zelda' games. It is a complete example of how to use Requirejs with Angularjs and Bootstrap.</p>
+
+            <p>This RequireJS + AngularJS configuration is based on <a href="https://www.startersquad.com/blog/angularjs-requirejs/">this complete tutorial by StarterSquad</a>.</p>
+
+            <p>Used technologies:</p>
+
+            <ul class="task-list">
+            <li>App developed with Requirejs, AngularJs, Bootstrap and JQuery.</li>
+            <li>Unit Testing with Karma and Jasmine.</li>
+            <li>e2e Testing with Selenium, Protractor and Jasmine.</li>
+            <li>Package Management with Bower and npm.</li>
+            <li>Optimized CSS and JS distribution with Grunt.</li>
+            </ul><h2>
+            <a name="user-content-requisites" class="anchor" href="#requisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requisites</h2>
+
+            <ul class="task-list">
+            <li>
+            <a href="http://nodejs.org/">NodeJS</a> and npm</li>
+            <li>
+            <a href="https://github.com/bower/bower">Bower</a> installed globally <code>npm install -g bower</code>
+            </li>
+            <li>
+            <a href="https://github.com/gruntjs/grunt-cli">Grunt cli</a> installed globally <code>npm install -g grunt-cli</code>
+            </li>
+            <li>
+            <a href="https://github.com/karma-runner/karma">Karma cli</a> installed globally <code>npm install -g karma-cli</code>
+            </li>
+            </ul><h2>
+            <a name="user-content-download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
+
+            <p>Clone this repository:</p>
+
+            <p><code>git clone https://github.com/albert-gonzalez/zeldify-your-name.git</code></p>
+
+            <h2>
+            <a name="user-content-install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+            <p>Go to zeldify-your-name path and execute</p>
+
+            <p><code>npm install</code></p>
+
+            <p>This command will install the node modules, it will execute bower install and it will start the http-server
+            Open the url <code>localhost:8000</code> in your browser</p>
+
+            <h2>
+            <a name="user-content-build-js-and-css-distribution" class="anchor" href="#build-js-and-css-distribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build JS and CSS distribution</h2>
+
+            <p>There is a <a href="https://github.com/albert-gonzalez/zeldify-your-name/blob/master/Gruntfile.js"><code>Gruntfile</code></a> configured for building the js and css distribution with this command:</p>
+
+            <p><code>grunt build</code></p>
+
+            <p>This will compile bootstrap files with less and javascript with the r.js optimizer</p>
+
+            <h2>
+            <a name="user-content-unit-testing" class="anchor" href="#unit-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit Testing</h2>
+
+            <p>Execute:</p>
+
+            <p><code>karma start</code></p>
+
+            <p>This will start the karma runner and execute the test.</p>
+
+            <p>Karma config is in the file <a href="https://github.com/albert-gonzalez/zeldify-your-name/blob/master/karma.conf.js"><code>karma.conf.js</code></a></p>
+
+            <p>Requirejs config for the test is in the file <a href="https://github.com/albert-gonzalez/zeldify-your-name/blob/master/test/test-main.js"><code>test/test-main.js</code></a>. This file configures Requirejs paths and finds the test for executing them.</p>
+
+            <h2>
+            <a name="user-content-e2e-testing" class="anchor" href="#e2e-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>E2E Testing</h2>
+
+            <p>Install selenium locally:</p>
+
+            <p><code>node_modules\grunt-protractor-runner\node_modules\.bin\webdriver-manager update</code></p>
+
+            <p>Start selenium:</p>
+
+            <p><code>node_modules\grunt-protractor-runner\node_modules\.bin\webdriver-manager start</code></p>
+
+            <p>Start local server:</p>
+
+            <p><code>npm start</code></p>
+
+            <p>Execute e2e test:</p>
+
+            <p><code>grunt protractor</code></p>
+
+            <p>This will open chrome browser and execute the e2e test. If you want to change the browser or others options you can modifiy the file <a href="https://github.com/albert-gonzalez/zeldify-your-name/blob/master/protractor.conf.js"><code>protractor.conf.js</code></a></p></article>
         </div>
       </div>
     </div>
