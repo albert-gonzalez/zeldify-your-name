@@ -2,7 +2,9 @@
 
 Zeldify Your Name is a simple application that convert the input string in a name of 'The Legend of Zelda' games. It is a complete example of how to use Requirejs with Angularjs and Bootstrap.
 
-This RequireJS + AngularJS configuration is based on [this complete tutorial by StarterSquad](https://www.startersquad.com/blog/angularjs-requirejs/).
+This RequireJS + AngularJS configuration is based on [this complete tutorial by StarterSquad](https://www.startersquad.com/blog/angularjs-requirejs/). If you want to use this configuration in a new project, you can use this template:
+
+[RequireJS + AngularJS Template](https://github.com/albert-gonzalez/requirejs-angularjs-template)
 
 Used technologies:
 * App developed with Requirejs, AngularJs, Bootstrap and JQuery.
