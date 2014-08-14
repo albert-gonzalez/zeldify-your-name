@@ -1,4 +1,7 @@
-define(['angular', 'app/js/services/name.converter'], function (ng) {
+define([
+    'angular',
+    'app/js/services/name.converter'
+], function (ng) {
     'use strict';
     describe('Name Converter should convert names correctly"', function () {
         var injector,

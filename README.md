@@ -25,9 +25,10 @@ Clone this repository:
 ##Install
 Go to zeldify-your-name path and execute
 
-`npm install`
+`npm start`
 
-This command will install the node modules, it will execute bower install and it will start the http-server
+This command will install the node modules, it will execute bower install, it will build the js and css and it will start the http-server
+
 Open the url `localhost:8000` in your browser
 
 ##Build JS and CSS distribution

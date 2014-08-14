@@ -1,4 +1,7 @@
-define(['angular-mocks', 'app/js/controllers/search.controller'], function () {
+define([
+    'angular-mocks',
+    'app/js/controllers/search.controller'
+], function () {
     'use strict';
     describe('Search controller', function () {
 

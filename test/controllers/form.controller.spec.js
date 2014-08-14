@@ -1,4 +1,7 @@
-define(['angular-mocks', 'app/js/controllers/form.controller'], function () {
+define([
+    'angular-mocks',
+    'app/js/controllers/form.controller'
+], function () {
     'use strict';
     describe('Form controller', function () {
 
